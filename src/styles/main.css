@@ -1,0 +1,72 @@
+body {
+  background: #e9c9f5;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.calculator {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.display {
+  background: #edf6f7;
+  color: #333;
+  font-size: 2rem;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: right;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button {
+  background: #f5f6fa;
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background: #e2e3e9;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button.equal {
+  background: #e493b3;
+  color: white;
+  border-radius: 25px;
+}
