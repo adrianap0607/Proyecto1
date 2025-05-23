@@ -20,14 +20,14 @@ export default function useCalculatorLogic() {
   }
 
   const calculate = (a, b, op) => {
-    const x = parseFloat(a)
-    const y = parseFloat(b)
+    a = parseFloat(a)
+    b = parseFloat(b)
     let result = 0
-    if (op === '+') result = x + y
-    if (op === '-') result = x - y
-    if (op === '*') result = x * y
-    if (op === '/') result = x / y
-    if (op === 'mod') result = x % y
+    if (op === '+') result = a + b
+    if (op === '-') result = a - b
+    if (op === 'x') result = a * b
+    if (op === '÷') result = a / b
+    if (op === 'mod') result = a % b
     if (result < 0 || result > MAX) return 'ERROR'
     const str = result.toString().slice(0, 9)
     return str
@@ -67,7 +67,7 @@ export default function useCalculatorLogic() {
       }
       return
     }
-    if (['+', '-', '*', '/', 'mod'].includes(key)) {
+    if (['+', '-', 'x', '÷', 'mod'].includes(key)) {
       if (value && operator) {
         const res = calculate(value, display, operator)
         setValue(res)

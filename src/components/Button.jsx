@@ -1,10 +1,6 @@
-export default function Button({ label, onClick }) {
-  const isEqual = label === '='
+export default function Button({ label, onClick, className = '' }) {
   return (
-    <button
-      className={`button ${isEqual ? 'equal' : ''}`}
-      onClick={() => onClick(label)}
-    >
+    <button className={`button ${className}`} onClick={() => onClick(label)}>
       {label}
     </button>
   )
