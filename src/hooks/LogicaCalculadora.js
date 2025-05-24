@@ -1,4 +1,4 @@
-// Maneja la lógica de cálculo y el estado del display
+//Aqui se maneja la lógica de cálculo y el estado del display
 import { useState } from 'react'
 
 export default function useCalculatorLogic() {

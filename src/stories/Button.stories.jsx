@@ -29,4 +29,28 @@ const Template = (args) => <Button {...args} />;
 export const Default = Template.bind({});
 Default.args = {
     label: "Hola"
-}
+};
+
+export const Numero = Template.bind({});
+Numero.args = {
+    label: "5",
+    className: ""
+};
+
+export const Operacion = Template.bind({});
+Operacion.args = {
+    label: "+",
+    className: "operation"
+};
+
+export const Igual = Template.bind({});
+Igual.args = {
+    label: "=",
+    className: "equal"
+};
+
+export const Borrar = Template.bind({});
+Borrar.args = {
+    label: "CLR",
+    className: "equal"
+};
