@@ -1,6 +1,7 @@
 import SpecialButton from "../components/SpecialButton"
 import "../styles/main.css"
 
+/* eslint-disable no-unused-vars */
 export default {
   title: "SpecialButton",
   component: SpecialButton,
