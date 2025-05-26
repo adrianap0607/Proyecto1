@@ -1,7 +1,8 @@
-import Button from "../components/Button";
+import Button from "../components/Button"
 
-import "../styles/main.css";
+import "../styles/main.css"
 
+/* eslint-disable no-unused-vars */
 export default {
     title: "Button",
     component: Button,
@@ -24,33 +25,33 @@ export default {
     },
 }
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <Button {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
     label: "Hola"
-};
+}
 
-export const Numero = Template.bind({});
+export const Numero = Template.bind({})
 Numero.args = {
     label: "5",
     className: ""
-};
+}
 
-export const Operacion = Template.bind({});
+export const Operacion = Template.bind({})
 Operacion.args = {
     label: "+",
     className: "operation"
-};
+}
 
-export const Igual = Template.bind({});
+export const Igual = Template.bind({})
 Igual.args = {
     label: "=",
     className: "equal"
-};
+}
 
-export const Borrar = Template.bind({});
+export const Borrar = Template.bind({})
 Borrar.args = {
     label: "CLR",
     className: "equal"
-};
+}
