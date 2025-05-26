@@ -1,6 +1,7 @@
 import Display from "../components/Display"
 import "../styles/main.css"
 
+/* eslint-disable no-unused-vars */
 export default {
   title: "Display",
   component: Display,
